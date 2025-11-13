@@ -26,8 +26,6 @@ except Exception:
     print("Warning: Could not determine MetaClass.")
     exit(1)
 
-# ---------------- Configuration ----------------
-
 # ---------------- Provider Configuration ----------------
 
 PROVIDERS = {
@@ -66,9 +64,6 @@ PROMPT = "If an image of a magazine: return empty string. If a diagram: represen
 logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger("docling_ollama")
 
-
-
-# ---------------- Ollama helper ----------------
 
 def describe_pil(img: Image.Image, prompt: str) -> str:
     """Send a PIL image to the configured multimodal backend (Ollama / OpenAI / Gemini / Openrouter)."""
