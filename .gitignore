@@ -1,0 +1,10 @@
+*.whl
+*.pdf
+*.md
+*.b64
+readly-report-10pages-pdf/
+.venv/
+__pycache__/
+attachments/
+.env
+*.json
